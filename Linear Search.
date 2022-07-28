@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int ar[10],i,x,n,index;
+    cout<<"How many element you want to store:\n";
+    cin>>n;
+    cout<<"Enter the arrays element one by one:\n";
+    for(i=0;i<n;i++)
+    cin>>ar[i];
+    cout<<"\n Eneter the element which you want to search\n";
+    cin>>x;
+    for(i=0;i<n;i++)
+    if(ar[i]==x)
+    break;
+    if(i<n)
+    cout<<"element found at index"<<i;
+    else
+    cout<<"not found";
+}
