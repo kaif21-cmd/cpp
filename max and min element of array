@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int ar[30],n,currmax,currmin,i;
+    cout<<"Enter the number of element in the array\n";
+    cin>>n;
+    cout<<"Enter the element one by one:\n";
+    for(i=0;i<n;i++)
+    cin>>ar[i];
+    currmax=ar[0];
+    currmin=ar[0];
+    for(int i=0;i<n;i++)
+    {
+        if(ar[i]>currmax)
+        {
+            currmax=ar[i];
+        }
+        if(ar[i]<currmin)
+        {
+            currmin=ar[i];
+        }
+    }
+    cout<<"max element"<<currmax<< endl;
+    cout<<"min element"<<currmin<< endl;
+}
